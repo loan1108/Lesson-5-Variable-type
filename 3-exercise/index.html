@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Bài tập] Tính lãi suất ngân hàng</title>
+</head>
+<body>
+    <script>
+        let inputMoney = prompt('Hãy nhập số tiền bạn muốn gửi')
+        let inputYear = prompt('Hãy nhập số năm bạn muốn gửi');
+        let inputRate = prompt('Hãy nhập lãi suất');
+        let money = Number(inputMoney);
+        let year = Number(inputYear);
+        let rate = Number(inputRate) * 0.01;
+        let total = money + money * rate * year;
+        document.write('Với số tiền ' + money + ' với lãi suất ' + rate + ' thì sau ' + year + ' năm, bạn sẽ nhận được ' + total);
+    </script>
+</body>
+</html>
